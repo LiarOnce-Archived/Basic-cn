@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+*********************************************************************************
+BASIC! is an implementation of the Basic programming language for
+Android devices.
+
+Copyright (C) 2010 - 2015 Paul Laughton
+
+This file is part of BASIC! for Android
+
+    BASIC! is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    BASIC! is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with BASIC!.  If not, see <http://www.gnu.org/licenses/>.
+
+    You may contact the author or current maintainers at http://rfobasic.freeforums.org
+
+**********************************************************************************
+-->
+
+<resources>
+
+    <string-array name="font_list_preference">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+
+    <string-array name="fontvalues_list_preference">
+        <item>小</item>
+        <item>中</item>
+        <item>大</item>
+    </string-array>
+
+    <string-array name="orientation_list_preference">
+        <item>通过传感器的变量</item>
+        <item>固定横屏</item>
+        <item>固定反向横屏</item>  
+        <item>固定竖屏</item>  
+        <item>固定反向竖屏</item>  
+    </string-array>
+    
+        <string-array name="orientationvalues_list_preference">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="es_list_preference">
+        <item>白色背景+黑色文本</item>
+        <item>黑色背景+白色文本</item>
+        <item>蓝色背景+白色文本</item>
+    </string-array>
+
+    <string-array name="esvalues_list_preference">
+        <item>BW</item>
+        <item>WB</item>
+        <item>WBL</item>
+    </string-array>
+
+    <string-array name="csf_list_preference">
+        <item>等宽字体</item>
+        <item>新宋体</item>
+        <item>宋体</item>
+    </string-array>
+
+    <string-array name="csfvalues_list_preference">
+        <item>MS</item>
+        <item>SS</item>
+        <item>S</item>
+    </string-array>
+
+    <string-array name="empty_console_list_preference">
+        <item>使用文本背景颜色</item>
+        <item>使用分隔符线颜色</item>
+    </string-array>
+
+    <string-array name="empty_console_values_list_preference">
+        <item>background</item>
+        <item>line</item>
+    </string-array>
+
+    <string-array name="base_drive_names">
+        <item>/mnt/sdcard</item>
+        <item>/mnt/sdcard</item>
+    </string-array>
+
+    <string-array name="base_drive_values">
+        <item>/mnt/sdcard</item>
+    </string-array>
+
+</resources>

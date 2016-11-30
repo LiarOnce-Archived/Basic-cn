@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+*********************************************************************************
+BASIC! is an implementation of the Basic programming language for
+Android devices.
+
+Copyright (C) 2010 - 2015 Paul Laughton
+
+This file is part of BASIC! for Android
+
+    BASIC! is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    BASIC! is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with BASIC!.  If not, see <http://www.gnu.org/licenses/>.
+
+    You may contact the author or current maintainers at http://rfobasic.freeforums.org
+
+**********************************************************************************
+-->
+
+<resources>
+    <!-- For "app_name" and "version" see setup.xml -->
+    <string name="hello">Hello World, BASIC!</string>
+
+    <!-- Activity labels; for "run_name" and "textinput_name" see setup.xml -->
+    <string name="editor_name">BASIC! 程序编辑器</string>
+    <string name="load_name">BASIC! 读取文件</string>
+    <string name="delete_name">BASIC! 删除文件</string>
+    <string name="help_name">BASIC! 帮助</string>
+    <string name="settings_name">BASIC! 设置</string>
+    <string name="search_name">BASIC! 搜索</string>
+    <string name="format_name">BASIC! 格式化</string>
+    <string name="gr_name">图形</string>
+    <string name="debug_name">BASIC! 调试工具</string>
+    <string name="play_sound_name"> </string>
+    <string name="select_device"> 选择设备</string>
+    <string name="title_paired_devices">配对设备</string>
+    <string name="title_other_devices">其他设备</string>
+
+    <string name="button_scan">扫描</string>
+    <string name="none_found">没有找到</string>
+    <string name="scanning">扫描中</string>
+    <string name ="none_paired">没有配对设备</string>
+    <string name ="web_view_name">Web视图</string>
+
+    <string name="intro_getline">BASIC! 快捷方式生成器</string>
+    <string name="enter_text_label">程序文件名</string>
+    <string name="edit_button_label">编辑</string>
+    <string name="delete_button_label">删除</string>
+    <string name="enter_text2_label">图标文件名</string>
+    <string name="enter_text3_label">快捷方式名称</string>
+
+    <string name="cancel_button_label">取消</string>
+    <string name="ok_button_label">确定</string>
+    <string name="yes_button_label">是</string>
+    <string name="no_button_label">否</string>
+    <string name="choose_one">选择一个</string>
+    <string name="hex_color">输入一个十六进制颜色值</string>
+    <string name="color_chars">0123456789abcdefxABCDEFX#</string>
+
+    <string name="stt_prompt">"BASIC! 语音转文本"</string>
+
+	<!-- Editor menu items -->
+	<string name="run">运行</string>
+	<string name="load">读取</string>
+	<string name="save">保存</string>
+	<string name="delete">删除</string>
+	<string name="search">搜索</string>
+	<string name="format">格式化</string>
+	<string name="clear">清除</string>
+	<string name="load_run">读取并运行</string>
+	<string name="save_run">保存并运行</string>
+	<string name="settings">设置</string>
+	<string name="spawn">生成应用</string>
+	<string name="help">帮助</string>
+	<string name="about">关于</string>
+	<string name="exit">退出</string>
+
+	<!-- Console menu items -->
+	<string name="stop">停止</string>
+	<string name="editor">编辑器</string>
+	<string name="pause">暂停</string>
+
+	<!-- Preference options to put Editor menu items on Action Bar -->
+	<string name="pref_MAB_key">editor_items_on_action_bar</string>
+	<string name="pref_MAB_title">在操作栏上的菜单项</string>
+	<string name="pref_MAB_summary">要在操作栏上显示的编辑器菜单项</string>
+	<string name="pref_MAB_run_key">editor_menu_run_on_action_bar</string>
+	<string name="pref_MAB_run_title">运行</string>
+	<string name="pref_MAB_run_summary">Show RUN on action bar if it fits</string>
+	<string name="pref_MAB_load_key">editor_menu_load_on_action_bar</string>
+	<string name="pref_MAB_load_title">读取</string>
+	<string name="pref_MAB_load_summary">Show LOAD on action bar if it fits</string>
+	<string name="pref_MAB_save_key">editor_menu_save_on_action_bar</string>
+	<string name="pref_MAB_save_title">保存</string>
+	<string name="pref_MAB_save_summary">Show SAVE on action bar if it fits</string>
+	<string name="pref_MAB_clear_key">editor_menu_clear_on_action_bar</string>
+	<string name="pref_MAB_clear_title">清除</string>
+	<string name="pref_MAB_clear_summary">Show CLEAR on action bar if it fits</string>
+	<string name="pref_MAB_search_key">editor_menu_search_on_action_bar</string>
+	<string name="pref_MAB_search_title">搜索</string>
+	<string name="pref_MAB_search_summary">Show SEARCH on action bar if it fits</string>
+	<string name="pref_MAB_exit_key">editor_menu_exit_on_action_bar</string>
+	<string name="pref_MAB_exit_title">退出</string>
+	<string name="pref_MAB_exit_summary">Show EXIT on action bar if it fits</string>
+
+	<!-- Shortcut warnings -->
+	<string name="no_prog_name">您还没有输入一个BASIC!程序名称.</string>
+	<string name="no_icon_name">您还没有输入一个图标文件的名称.</string>
+	<string name="no_shortcut_name">您还没有输入一个快捷方式的名称.</string>
+	<string name="no_prog_file">BASIC!程序文件不存在 (您以后可以创建它).</string>
+	<string name="no_icon_file">图标文件不存在.</string>
+	<string name="no_icon">无法从图标文件创建图标.</string>
+	<string name="instr_1">选择取消返回到安装程序</string>
+	<string name="instr_2">或确定尝试创建快捷方式.</string>
+
+</resources>

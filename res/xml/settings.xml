@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+*********************************************************************************
+BASIC! is an implementation of the Basic programming language for
+Android devices.
+
+Copyright (C) 2010 - 2015 Paul Laughton
+
+This file is part of BASIC! for Android
+
+    BASIC! is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    BASIC! is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with BASIC!.  If not, see <http://www.gnu.org/licenses/>.
+
+    You may contact the author or current maintainers at http://rfobasic.freeforums.org
+
+**********************************************************************************
+-->
+
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceScreen
+        android:key="colors_pref"
+        android:title="屏幕颜色"
+        android:summary="选择一种配色方案或自定义颜色"
+        android:persistent="false">
+
+        <ListPreference
+            android:key="es_pref"
+            android:title="配色方案"
+            android:summary="选择配色方案"
+            android:entries="@array/es_list_preference"
+            android:entryValues="@array/esvalues_list_preference"
+            android:defaultValue="BW"
+            android:dialogTitle="@string/choose_one" />
+
+        <CheckBoxPreference
+            android:key="custom_colors_pref"
+            android:title="自定义颜色"
+            android:summary="定义您自己的颜色"
+            android:defaultValue="false" />
+
+        <EditTextPreference
+            android:key="tc_pref"
+            android:dependency="custom_colors_pref"
+            android:title="字体颜色"
+            android:summary="设置字体颜色"
+            android:digits="@string/color_chars"
+            android:defaultValue="@integer/color2"
+            android:dialogTitle="@string/hex_color" />
+
+        <EditTextPreference
+            android:key="bc_pref"
+            android:dependency="custom_colors_pref"
+            android:title="背景颜色"
+            android:summary="设置背景颜色"
+            android:digits="@string/color_chars"
+            android:defaultValue="@integer/color3"
+            android:dialogTitle="@string/hex_color" />
+
+        <EditTextPreference
+            android:key="lc_pref"
+            android:dependency="custom_colors_pref"
+            android:title="行颜色"
+            android:summary="设置行列颜色"
+            android:digits="@string/color_chars"
+            android:defaultValue="@integer/color1"
+            android:dialogTitle="@string/hex_color" />
+
+        <EditTextPreference
+            android:key="hc_pref"
+            android:dependency="custom_colors_pref"
+            android:title="高亮颜色"
+            android:summary="设置高亮颜色"
+            android:digits="@string/color_chars"
+            android:defaultValue="@integer/color4"
+            android:dialogTitle="@string/hex_color" />
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="console_pref"
+        android:title="控制台设置"
+        android:summary="设置控制台和其他文本屏幕"
+        android:persistent="false">
+
+        <ListPreference
+            android:key="font_pref"
+            android:title="字体大小"
+            android:summary="为控制台等选择字体大小."
+            android:entries="@array/font_list_preference"
+            android:entryValues="@array/fontvalues_list_preference"
+            android:defaultValue="中"
+            android:dialogTitle="@string/choose_one" />
+
+        <ListPreference
+            android:key="csf_pref"
+            android:title="字样"
+            android:summary="为控制台等选择字样."
+            android:entries="@array/csf_list_preference"
+            android:entryValues="@array/csfvalues_list_preference"
+            android:defaultValue="MS"
+            android:dialogTitle="@string/choose_one" />
+
+        <CheckBoxPreference
+            android:key="console_menu"
+            android:title="控制台菜单"
+            android:summary="在控制台会显示菜单."
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="lined_console"
+            android:title="控制台行"
+            android:summary="使用内衬控制台."
+            android:defaultValue="true" />
+
+        <ListPreference
+            android:key="empty_color_pref"
+            android:title="空的控制台颜色"
+            android:summary="选择不成文的控制台行的颜色."
+            android:entries="@array/empty_console_list_preference"
+            android:entryValues="@array/empty_console_values_list_preference"
+            android:defaultValue="background"
+            android:dialogTitle="@string/choose_one" />
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="editor_pref"
+        android:title="编辑器设置"
+        android:summary="程序编辑器设置."
+        android:persistent="false">
+
+        <CheckBoxPreference
+            android:key="lined_editor"
+            android:title="编辑器行"
+            android:summary="使用内衬的编辑器."
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="wrap_editor"
+            android:title="编辑器换行"
+            android:summary="长编辑器折行"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="autoindent"
+            android:title="编辑器自动缩进"
+            android:summary="开启编辑器自动缩进"
+            android:defaultValue="false" />
+
+    </PreferenceScreen>
+
+    <PreferenceScreen
+        android:key="@string/pref_MAB_key"
+        android:title="@string/pref_MAB_title"
+        android:summary="@string/pref_MAB_summary"
+        android:persistent="false">
+
+        <CheckBoxPreference
+            android:key="@string/pref_MAB_run_key"
+            android:title="@string/pref_MAB_run_title"
+            android:summary="@string/pref_MAB_run_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="@string/pref_MAB_load_key"
+            android:title="@string/pref_MAB_load_title"
+            android:summary="@string/pref_MAB_load_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="@string/pref_MAB_save_key"
+            android:title="@string/pref_MAB_save_title"
+            android:summary="@string/pref_MAB_save_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="@string/pref_MAB_clear_key"
+            android:title="@string/pref_MAB_clear_title"
+            android:summary="@string/pref_MAB_clear_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="@string/pref_MAB_search_key"
+            android:title="@string/pref_MAB_search_title"
+            android:summary="@string/pref_MAB_search_summary"
+            android:defaultValue="false" />
+
+        <CheckBoxPreference
+            android:key="@string/pref_MAB_exit_key"
+            android:title="@string/pref_MAB_exit_title"
+            android:summary="@string/pref_MAB_exit_summary"
+            android:defaultValue="false" />
+
+    </PreferenceScreen>
+
+    <ListPreference
+        android:key="so_pref"
+        android:title="屏幕方向"
+        android:summary="选择屏幕方向"
+        android:entries="@array/orientation_list_preference"
+        android:entryValues="@array/orientationvalues_list_preference"
+        android:defaultValue="0"
+        android:dialogTitle="@string/choose_one" />
+
+    <CheckBoxPreference
+        android:key="gr_accel"
+        android:title="图形加速"
+        android:summary="开启图形加速"
+        android:defaultValue="false" />
+
+    <ListPreference
+        android:key="base_drive_pref"
+        android:title="存储位置"
+        android:summary="选择存储位置"
+        android:entries="@array/base_drive_names"
+        android:entryValues="@array/base_drive_values"
+        android:defaultValue="none"
+        android:dialogTitle="@string/choose_one" />
+
+</PreferenceScreen>
