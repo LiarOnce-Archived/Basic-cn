@@ -45,28 +45,28 @@ This file is part of BASIC! for Android
 			android:layout_width="0dip"
 			android:layout_height="fill_parent"
 			android:textSize="12sp"
-			android:text="Next" />
+			android:text="下一个" />
 
 		<Button android:id="@+id/done_button"
 			android:layout_weight="1"
 			android:layout_width="0dip"
 			android:layout_height="fill_parent"
 			android:textSize="12sp"
-			android:text="Done" />
+			android:text="完成" />
 
 		<Button android:id="@+id/replace_button"
 			android:layout_weight="1"
 			android:layout_width="0dip"
 			android:layout_height="fill_parent"
 			android:textSize="12sp"
-			android:text="Replace" />
+			android:text="替换" />
 
 		<Button android:id="@+id/replace_all_button"
 			android:layout_weight="1"
 			android:layout_width="0dip"
 			android:layout_height="fill_parent"
 			android:textSize="12sp"
-			android:text="Replace All" />
+			android:text="替换全部" />
 
 	</LinearLayout>
 
@@ -85,7 +85,7 @@ This file is part of BASIC! for Android
 			android:layout_marginRight="10dip"
 			android:gravity="right"
 			style="@style/label_l"
-			android:text="Replace With:" />
+			android:text="替换为:" />
 	
 		<EditText android:id="@+id/replace_text"
 			android:layout_weight="3"
@@ -110,7 +110,7 @@ This file is part of BASIC! for Android
 			android:layout_marginRight="10dip"
 			android:gravity="right"
 			style="@style/label_l"
-			android:text="Search For:" />
+			android:text="搜索:" />
 
 		<EditText android:id="@+id/search_text"
 			android:layout_weight="3"

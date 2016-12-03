@@ -40,7 +40,7 @@ This file is part of BASIC! for Android
         android:layout_marginBottom="8dip"
         android:layout_centerHorizontal = "true"
         android:layout_alignParentBottom ="true"
-        android:text="Finished" />
+        android:text="完成" />
         
         <EditText android:id="@+id/the_text"
         android:gravity="top"
