@@ -1,6 +1,8 @@
 # Basic-cn
 The Repository for the files the Basic project that creates the BASIC! APK-中文翻译版本
 
+The original version [RFO-BASIC/Basic](https://github.com/RFO-BASIC/Basic)
+
 # 翻译进度
 大约95%，剩下的不翻译也懂了吧，还有一部分可能出现在源码而不是xml文件内。
 
